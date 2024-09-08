@@ -7,17 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5912FF562C8D4A4E0056D4AA /* WeatherMiniApp in Frameworks */ = {isa = PBXBuildFile; productRef = 5912FF552C8D4A4E0056D4AA /* WeatherMiniApp */; };
+		5920544D2C8D0687003A0619 /* MiniAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5920544C2C8D0687003A0619 /* MiniAppModel.swift */; };
+		5933B7EF2C8E025800036179 /* TicTacToeMiniApp in Frameworks */ = {isa = PBXBuildFile; productRef = 5933B7EE2C8E025800036179 /* TicTacToeMiniApp */; };
+		5933B7F22C8E2F0300036179 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5933B7F12C8E2F0300036179 /* Const.swift */; };
+		5933B7F42C8E332200036179 /* DisplayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5933B7F32C8E332200036179 /* DisplayMode.swift */; };
 		59CDB9B92C8A1FF9005A5789 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CDB9B82C8A1FF9005A5789 /* AppDelegate.swift */; };
 		59CDB9C22C8A1FFA005A5789 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59CDB9C12C8A1FFA005A5789 /* Assets.xcassets */; };
 		59CDB9C52C8A1FFA005A5789 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 59CDB9C42C8A1FFA005A5789 /* Base */; };
+		59CDB9CD2C8A222F005A5789 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CDB9CC2C8A222F005A5789 /* MainViewController.swift */; };
+		59CDB9CF2C8A23CD005A5789 /* MiniAppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CDB9CE2C8A23CD005A5789 /* MiniAppCell.swift */; };
+		59CDB9D12C8A23EF005A5789 /* MiniAppsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CDB9D02C8A23EF005A5789 /* MiniAppsCollectionView.swift */; };
+		59CDB9D32C8A2B8A005A5789 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CDB9D22C8A2B8A005A5789 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5920544C2C8D0687003A0619 /* MiniAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniAppModel.swift; sourceTree = "<group>"; };
+		5933B7F12C8E2F0300036179 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		5933B7F32C8E332200036179 /* DisplayMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayMode.swift; sourceTree = "<group>"; };
 		59CDB9B52C8A1FF9005A5789 /* QuickApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59CDB9B82C8A1FF9005A5789 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59CDB9C12C8A1FFA005A5789 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59CDB9C42C8A1FFA005A5789 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59CDB9C62C8A1FFA005A5789 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59CDB9CC2C8A222F005A5789 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		59CDB9CE2C8A23CD005A5789 /* MiniAppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniAppCell.swift; sourceTree = "<group>"; };
+		59CDB9D02C8A23EF005A5789 /* MiniAppsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniAppsCollectionView.swift; sourceTree = "<group>"; };
+		59CDB9D22C8A2B8A005A5789 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +49,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5920544E2C8D068D003A0619 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5920544C2C8D0687003A0619 /* MiniAppModel.swift */,
+				5933B7F32C8E332200036179 /* DisplayMode.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5920544F2C8D0696003A0619 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				59CDB9D22C8A2B8A005A5789 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		592054502C8D06A2003A0619 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				59CDB9CC2C8A222F005A5789 /* MainViewController.swift */,
+				59CDB9D02C8A23EF005A5789 /* MiniAppsCollectionView.swift */,
+				59CDB9CE2C8A23CD005A5789 /* MiniAppCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5933B7F02C8E2EF300036179 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				5933B7F12C8E2F0300036179 /* Const.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		59CDB9AC2C8A1FF9005A5789 = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				59CDB9B82C8A1FF9005A5789 /* AppDelegate.swift */,
+				5920544E2C8D068D003A0619 /* Model */,
+				5920544F2C8D0696003A0619 /* ViewModel */,
+				592054502C8D06A2003A0619 /* View */,
+				5933B7F02C8E2EF300036179 /* Constants */,
 				59CDB9C12C8A1FFA005A5789 /* Assets.xcassets */,
 				59CDB9C32C8A1FFA005A5789 /* LaunchScreen.storyboard */,
 				59CDB9C62C8A1FFA005A5789 /* Info.plist */,
@@ -138,7 +193,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5920544D2C8D0687003A0619 /* MiniAppModel.swift in Sources */,
+				59CDB9D32C8A2B8A005A5789 /* MainViewModel.swift in Sources */,
+				59CDB9CD2C8A222F005A5789 /* MainViewController.swift in Sources */,
 				59CDB9B92C8A1FF9005A5789 /* AppDelegate.swift in Sources */,
+				59CDB9D12C8A23EF005A5789 /* MiniAppsCollectionView.swift in Sources */,
+				59CDB9CF2C8A23CD005A5789 /* MiniAppCell.swift in Sources */,
+				5933B7F22C8E2F0300036179 /* Const.swift in Sources */,
+				5933B7F42C8E332200036179 /* DisplayMode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
