@@ -25,6 +25,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5933B7EF2C8E025800036179 /* TicTacToeMiniApp in Frameworks */,
+				5912FF562C8D4A4E0056D4AA /* WeatherMiniApp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +76,10 @@
 			dependencies = (
 			);
 			name = QuickApps;
+			packageProductDependencies = (
+				5912FF552C8D4A4E0056D4AA /* WeatherMiniApp */,
+				5933B7EE2C8E025800036179 /* TicTacToeMiniApp */,
+			);
 			productName = QuickApps;
 			productReference = 59CDB9B52C8A1FF9005A5789 /* QuickApps.app */;
 			productType = "com.apple.product-type.application";
@@ -102,6 +108,10 @@
 				Base,
 			);
 			mainGroup = 59CDB9AC2C8A1FF9005A5789;
+			packageReferences = (
+				5912FF542C8D4A4E0056D4AA /* XCRemoteSwiftPackageReference "WeatherMiniApp" */,
+				5933B7ED2C8E025800036179 /* XCRemoteSwiftPackageReference "TicTacToeMiniApp" */,
+			);
 			productRefGroup = 59CDB9B62C8A1FF9005A5789 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -351,6 +361,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5912FF542C8D4A4E0056D4AA /* XCRemoteSwiftPackageReference "WeatherMiniApp" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pavelbelenkow/WeatherMiniApp.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.1;
+			};
+		};
+		5933B7ED2C8E025800036179 /* XCRemoteSwiftPackageReference "TicTacToeMiniApp" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pavelbelenkow/TicTacToeMiniApp.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5912FF552C8D4A4E0056D4AA /* WeatherMiniApp */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5912FF542C8D4A4E0056D4AA /* XCRemoteSwiftPackageReference "WeatherMiniApp" */;
+			productName = WeatherMiniApp;
+		};
+		5933B7EE2C8E025800036179 /* TicTacToeMiniApp */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5933B7ED2C8E025800036179 /* XCRemoteSwiftPackageReference "TicTacToeMiniApp" */;
+			productName = TicTacToeMiniApp;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 59CDB9AD2C8A1FF9005A5789 /* Project object */;
 }
